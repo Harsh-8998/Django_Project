@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/CSS/index.css">
+    <title>Contact</title>
+   
+</head>
+  <body>
+    <div class="nav">
+        <img id ="logo" src="./static/img/logo.png" >
+        <a href=" ">Home</a>
+        <a href="about">About-Us</a>
+        <a href="services">Services</a>
+        <a href="contact">Contact</a>
+        
+    </div>
+    <hr>
+    <h3> CONTACT US </h3>
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3 ">
+            <img src="/static/contact1.jpeg" class="rounded float-start" width=100% >
+           </div>
+          </div>
+          <div class="col mx-4">
+            <div class="p-3">
+                
+                <form method="POST" action="/contact">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name='name'>
+                      </div>
+                    <div class="mb-5">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name='email' aria-describedby="emailHelp">               
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="phone" class="form-control" id="phone" name='phone'>
+                      </div>
+                      
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container text-center mt-5">
+        <div class="row align-items-start">
+         
+          <div class="col-1">
+            
+          </div>
+          <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d116848.09891253963!2d77.0051228763041!3d28.53599388764008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smedcare%20hospital%20delhi!5e0!3m2!1sen!2sin!4v1710673194250!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    
+     
+
+
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>MedCare</h2>
+                    <p>In the heart of the bustling city, the hospital stands as a beacon of hope and healing, its corridors echoing with the steady rhythm of compassionate care.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Adress</h2>
+                    <p>23-A Palam Vihar, New Delhi</p>
+                    <p>Phone: 123-456-7890</p>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 MedCare. All Rights Reserved.
+            </div>
+        </footer>
+        
+    </div>
+    <script src="./static/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
